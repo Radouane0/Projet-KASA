@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import About from './pages/About'
 import Home from './pages/Home'
 import Housing from './pages/Housing'
-import Error from './components/Error'
-import Header from './components/Header'
+import Error from './components'
+import Header from './components'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
