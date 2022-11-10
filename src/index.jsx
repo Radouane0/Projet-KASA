@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import About from './pages/About'
 import Home from './pages/Home'
 import Housing from './pages/Housing'
-import Error from './components'
-import Header from './components'
+import Error from './pages/Error'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -20,13 +21,14 @@ root.render(
                 <Route path="/about">
                     <About />
                 </Route>
-                <Route path="/housing">
+                <Route path="/housing/:id">
                     <Housing />
                 </Route>
-                <Route>
+                <Route path="/*">
                     <Error />
                 </Route>
             </Switch>
+            <Footer />
         </Router>
     </React.StrictMode>
 )

@@ -1,9 +1,24 @@
 import React from 'react'
+import Banner from '../../components/Banner'
+import BannerHome from '../../assets/BannerHome.png'
+import Logements from '../../datas/logements.json'
+//import Card from '../../components/Card'
 
-const Home = () => {
+function Home() {
     return (
         <div>
-            <h1>Page d'accueil</h1>
+            <Banner img={BannerHome} text="Chez vous, partout et ailleurs" />
+            <ul>
+                {Logements.map((logement) => (
+                    <li key={logement.id}>
+                        {/* <Card
+                            id={logement.id}
+                            cover={logement.cover}
+                            title={logement.title}
+                        /> */}
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }

@@ -1,0 +1,30 @@
+.header {
+    position: absolute;
+    width: 335px;
+    height: 47px;
+    top: 20px;
+    left: 20px;
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 56.72%;
+        width: 35%
+    }
+    &__nav {
+        position: absolute;
+        left: 40%;
+        bottom: 39%;
+        right: 12%;
+    }
+    &__nav-items {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+a {
+    color: #ff6060;
+}
+

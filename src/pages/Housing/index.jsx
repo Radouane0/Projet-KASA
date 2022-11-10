@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Housing = () => {
+function Housing() {
     return (
         <div>
             <h1>Logements</h1>
