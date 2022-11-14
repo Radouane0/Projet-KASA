@@ -6,7 +6,7 @@ body {
 }
 
 .header__nav-items {
-    font-size: 12px;
+    font-size: 16px;
     
 }
 
@@ -14,8 +14,25 @@ body {
     color: black;
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
     position: absolute;
     left: 10%;
-    bottom: -2%;
+    right: 30%;
     font-size: 24px;
+
+}
+
+.error p {
+    color: #FF6060;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer h1 {
+    font-size: 14px;
+    position: absolute;
+    left: 20%;
+    bottom: 30%;
 }
