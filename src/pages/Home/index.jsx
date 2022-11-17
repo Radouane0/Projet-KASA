@@ -13,7 +13,7 @@ function Home() {
             />
             <ul>
                 {Logements.map((logement) => (
-                    <li key={logement.id}>
+                    <li key={logement.id} className="card__list">
                         {
                             <Card
                                 id={logement.id}

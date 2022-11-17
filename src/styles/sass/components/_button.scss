@@ -1,0 +1,16 @@
+.button {
+    background: #ff6060;
+    color: white;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    height: 34px;
+    align-items: center;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 30px;
+    margin-bottom: 22px;
+    &__img {
+        width: 8%;
+    }
+}
+
