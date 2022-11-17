@@ -1,17 +1,23 @@
 .banner {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 13%;
+    background: black;
+    border-radius: 10px 10px 10px 10px;
+    width: 86%;
+    margin-top: 15px;
+    margin-left: 25px;
     &__img {
-        width: 90%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    overflow: hidden;
+        width: 100%;
+        height: 93px;
+        border-radius: 10px 10px 10px 10px;
+        object-fit: cover;
+        overflow: hidden;
+        opacity: 70%;
     }
 }
+
+
+
 
 
 
