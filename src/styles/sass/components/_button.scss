@@ -1,7 +1,7 @@
 .button {
     background: #ff6060;
     color: white;
-    width: 82%;
+    width: 91%;
     display: flex;
     justify-content: space-between;
     height: 34px;
@@ -11,6 +11,14 @@
     margin-bottom: 22px;
     &__img {
         width: 8%;
+    }
+    &__content {
+        background-color: #F7F7F7;
+        width: 85%;
+        height: 150px;
+        border-radius: 5px;
+        margin-top: -21px;
+        padding: 10px;
     }
 }
 

@@ -20,7 +20,7 @@ function Collapse({ category, content }) {
                     className="button__img"
                 ></img>
             </button>
-            {isOpen ? <div>{content}</div> : null}
+            {isOpen ? <div className="button__content">{content}</div> : null}
         </div>
     )
 }

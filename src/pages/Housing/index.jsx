@@ -1,9 +1,10 @@
 import React from 'react'
+import Carousel from '../../components/Carousel'
 
 function Housing() {
     return (
         <div>
-            <h1>Logements</h1>
+            <Carousel />
         </div>
     )
 }

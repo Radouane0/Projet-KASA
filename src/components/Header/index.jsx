@@ -9,9 +9,9 @@ function Header() {
             <nav className="header__nav">
                 <div className="header__nav-items">
                     <NavLink to="/" end="true">
-                        Accueil
+                        ACCUEIL
                     </NavLink>
-                    <NavLink to="/about">À propos</NavLink>
+                    <NavLink to="/about">A PROPOS</NavLink>
                 </div>
             </nav>
         </header>

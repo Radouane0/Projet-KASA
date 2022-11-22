@@ -7,7 +7,7 @@ function Error() {
     return (
         <div className="error">
             <img className="error__img" src={Error404} alt="Erreur 404" />
-            <p>Oups! La page que vous demandez n'existe pas.</p>
+            <p>Oups ! La page que vous demandez n'existe pas.</p>
             <NavLink to="/" className="error__link">
                 Retour à la page d'accueil
             </NavLink>
