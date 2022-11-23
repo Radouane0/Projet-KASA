@@ -9,7 +9,15 @@ function Collapse({ category, content }) {
     const OpenCollapse = () => {
         setIsOpen(!isOpen)
     }
-    console.log(isOpen)
+    const ContentCollapse = Array.isArray(content) ? (
+        <ul>
+            {content.map((element) => (
+                <li key={element}>{element}</li>
+            ))}
+        </ul>
+    ) : (
+        <p>{content}</p>
+    )
     return (
         <div>
             <button onClick={OpenCollapse} className="button">
@@ -20,7 +28,9 @@ function Collapse({ category, content }) {
                     className="button__img"
                 ></img>
             </button>
-            {isOpen ? <div className="button__content">{content}</div> : null}
+            {isOpen ? (
+                <div className="button__content">{ContentCollapse}</div>
+            ) : null}
         </div>
     )
 }

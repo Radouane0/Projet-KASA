@@ -1,13 +1,13 @@
 import React from 'react'
 import Banner from '../../components/Banner'
-import BannerAbout from '../../assets/BannerAbout.png'
+import BannerAboutMobile from '../../assets/BannerAboutMobile.png'
 import AboutDatas from '../../datas/about.json'
 import Collapse from '../../components/Collapse'
 
 function About() {
     return (
         <div>
-            <Banner img={BannerAbout} text=" " />
+            <Banner img={BannerAboutMobile} text=" " />
             <ul>
                 {AboutDatas.map((text, index) => (
                     <li key={index}>

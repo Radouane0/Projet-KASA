@@ -1,19 +1,18 @@
 .header {
-    width: 335px;
+    width: 100%;
     height: 47px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 25px;
     &__img {
         width: 35%
     }
     &__nav-items {
-        display: flex;
-        justify-content: space-evenly;
         font-size: 14px;
         font-weight: bold;
+        margin-right: 53px;
     }
 }
 
