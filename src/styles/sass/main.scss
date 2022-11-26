@@ -1,3 +1,6 @@
+//utils
+@import "./utils/variables";
+
 //base
 @import "./base/base";
 @import "./base/typographie";
@@ -8,7 +11,8 @@
 @import "./components/button";
 @import "./components/carousel";
 @import "./components/tags";
-
+@import "./components/ratings";
+@import "./components/host";
 
 //layout
 @import "./layout/header";
@@ -17,6 +21,3 @@
 //pages
 @import "./pages/accueil";
 
-
-//utils
-@import "./utils/variables";

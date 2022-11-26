@@ -1,9 +1,14 @@
 import React from 'react'
-// faire un map sur tags et pour chaque tag on affiche un <p>
+import '../../styles/sass/main.scss'
+
 function Tags({ tags }) {
     return (
-        <div>
-            <p className="tag">{tags}</p>
+        <div className="tag">
+            {tags.map((tag) => (
+                <p className="tag__name" key={tag}>
+                    {tag}
+                </p>
+            ))}
         </div>
     )
 }

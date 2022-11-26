@@ -1,10 +1,11 @@
 import React from 'react'
+import '../../styles/sass/main.scss'
 
 function Host({ name, picture }) {
     return (
-        <div>
-            {name}
-            <img src={picture} alt="profil"></img>
+        <div className="host">
+            <p className="host__name">{name}</p>
+            <img src={picture} alt="profil" className="host__img"></img>
         </div>
     )
 }

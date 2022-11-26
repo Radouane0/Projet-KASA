@@ -28,7 +28,7 @@ function Carousel({ pictures }) {
                 </button>
             )}
             {totalPictures === 1 ? null : (
-                <div className="carousel__compteimg">
+                <div className="carousel__imgcount">
                     {stateIndex + 1}/{totalPictures}
                 </div>
             )}

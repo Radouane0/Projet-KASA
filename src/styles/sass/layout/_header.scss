@@ -1,20 +1,24 @@
 .header {
-    width: 100%;
     height: 47px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
     margin-left: 25px;
+    margin-right: 25px;
     &__img {
-        width: 35%
+        width: 130px;
+        @media screen and (min-width: map-get($breakpoint, desktop)) {
+             width: 10%;
+             margin-top: 15px;
+         }
     }
     &__nav-items {
         font-size: 14px;
         font-weight: bold;
-        margin-right: 53px;
     }
 }
+
 
 a {
     color: #ff6060;

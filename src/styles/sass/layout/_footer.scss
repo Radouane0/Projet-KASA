@@ -10,5 +10,9 @@
     &__img {
         width: 30%;
         margin-bottom: 11px;
+        @media screen and (min-width: map-get($breakpoint, desktop)) {
+            width: 7%;
+        }
     }
+    
 }
