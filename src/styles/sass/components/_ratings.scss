@@ -4,5 +4,8 @@
     &__star {
         width: 5%;
         margin-right: 5px;
+        @media screen and (min-width: map-get($breakpoint, desktop)) {
+            width: 2%;
+        }
     }
 }

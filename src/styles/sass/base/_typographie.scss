@@ -17,7 +17,16 @@ body {
     right: 31%;
     font-size: 24px;
     line-height: 24px;
-
+    @media screen and (min-width: map-get($breakpoint, tablette)) {
+        font-size: 30px;
+        left: 170px;
+        right: 0;
+    }
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
+        left: 230px;
+        font-size: 34px;
+        right: 0;
+    }
 }
 
 .card p {
@@ -25,16 +34,19 @@ body {
     margin-left: 10px;
     font-size: 20px;
     margin-top: -62px;
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
+        font-size: 18px;
+    }
 }
 
 .button__content {
-    color: #FF6060;
+    color: $color-primary;
     line-height: 20px;
     font-size: 14px;
 }
 
 .error p {
-    color: #FF6060;
+    color: $color-primary;
     display: flex;
     align-items: flex-end;
     text-align: center;
@@ -45,20 +57,30 @@ body {
     font-size: 13px;
     color: white;
     margin-left: 0;
-    @media screen and (min-width: map-get($breakpoint, desktop)) {
+    @media screen and (min-width: map-get($breakpoint, tablette)) {
         font-size: 17px;
     }
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
+        font-size: 17px;
+    }   
 }
 
 h1 {
-    color: #FF6060;
+    color: $color-primary;
     font-size: 20px;
     margin-left: 25px;
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
+        font-size: 36px;
+        margin-bottom: 0;
+    }
 }
 
 h2 {
-    color: #FF6060;
+    color: $color-primary;
     font-size: 14px;
     margin-left: 25px;
     margin-bottom: 0;
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
+        font-size: 18px;
+    }
 }

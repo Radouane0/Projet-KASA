@@ -1,7 +1,7 @@
 .button {
-    background: #ff6060;
+    background: $color-primary;
     color: white;
-    width: 91%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     height: 34px;
@@ -10,28 +10,55 @@
     margin-top: 30px;
     margin-bottom: 22px;
     border: none;
-    font-size: 12px;
+    font-size: 13px;
+    @media screen and (min-width: map-get($breakpoint, tablette)) {
+        margin-left: 10px;
+        font-size: 15px;
+    }
     @media screen and (min-width: map-get($breakpoint, desktop)) {
         font-size: 17px;
+        width: 75%;
+        margin-left: 92px;
+        padding: 15px;
     }
     &__img {
         width: 5%;
+        @media screen and (min-width: map-get($breakpoint, tablette)) {
+            width: 3%;
+            margin-right: 5px;
+        }
         @media screen and (min-width: map-get($breakpoint, desktop)) {
             width: 1.5%;
             margin-right: 20px;
-        } 
+        }    
     }
     &__content {
-        background-color: #F7F7F7;
-        width: 85%;
+        background-color: #F6F6F6;
+        width: 84%;
         height: 150px;
         border-radius: 5px;
-        margin-top: -21px;
+        margin-top: -22px;
         padding: 10px;
+        @media screen and (min-width: map-get($breakpoint, tablette)) {
+            width: 87%;
+            font-size: 17px;
+            margin-left: 10px;
+            line-height: 26px;
+        }
+        @media screen and (min-width: map-get($breakpoint, desktop)) {
+            margin-left: 92px;
+            width: 72.8%;
+            font-size: 20px;
+            line-height: 26px;
+        }
     }
 }
 
-
+.collapse-logement {
+    margin-left: 25px;
+    margin-top: 45px;
+    width: 93%
+}
 
 .carousel__left {
     position: absolute;
@@ -40,6 +67,12 @@
     border: none;
     width: 9%;
     background: transparent;
+    cursor: pointer;
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
+        width: 4%;
+        left: 80px;
+        top: 245px;
+    }
 }
 
 .carousel__right {
@@ -49,5 +82,11 @@
     border: none;
     width: 9%;
     background: transparent;
+    cursor: pointer;
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
+        width: 4%;
+        right: 80px;
+        top: 245px;
+    }
 }
 

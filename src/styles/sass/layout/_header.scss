@@ -9,19 +9,26 @@
     &__img {
         width: 130px;
         @media screen and (min-width: map-get($breakpoint, desktop)) {
-             width: 10%;
+             width: 15%;
              margin-top: 15px;
          }
     }
     &__nav-items {
         font-size: 14px;
         font-weight: bold;
+        @media screen and (min-width: map-get($breakpoint, tablette)) {
+            font-size: 15px;
+        }
+        @media screen and (min-width: map-get($breakpoint, desktop)) {
+            font-size: 16px;
+            margin-top: 15px;
+        }
     }
 }
 
 
 a {
-    color: #ff6060;
+    color: $color-primary;
     margin-left: 15px;
 }
 

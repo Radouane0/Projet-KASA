@@ -11,9 +11,12 @@
     }
     &__img {
         width: 50%;
+        @media screen and (min-width: map-get($breakpoint, tablette)) {
+            width: 30%;
+        }
         @media screen and (min-width: map-get($breakpoint, desktop)) {
             width: 20%;
-        }
+        }   
     }
 }
 

@@ -2,13 +2,20 @@
     display: flex;
     align-items: center;
     margin-left: 25px;
+    margin-bottom: 35px;
     &__name{
-    background-color: #FF6060;
+    background-color: $color-primary;
     border-radius: 5px;
     padding: 5px;
     font-size: 10px;
     margin-right: 14px;
     text-align: center;
     width: 25%;
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
+        border-radius: 10px;
+        width: 10%;
+        font-size: 14px;
+
+    }
     }
 }

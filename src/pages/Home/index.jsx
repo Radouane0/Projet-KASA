@@ -8,19 +8,21 @@ function Home() {
     return (
         <div>
             <Banner img={BannerHome} text="Chez vous, partout et ailleurs" />
-            <ul>
-                {Logements.map((logement) => (
-                    <li key={logement.id} className="card__list">
-                        {
-                            <Card
-                                id={logement.id}
-                                cover={logement.cover}
-                                title={logement.title}
-                            />
-                        }
-                    </li>
-                ))}
-            </ul>
+            <div>
+                <ul className="card__ul">
+                    {Logements.map((logement) => (
+                        <li key={logement.id} className="card__list">
+                            {
+                                <Card
+                                    id={logement.id}
+                                    cover={logement.cover}
+                                    title={logement.title}
+                                />
+                            }
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 }

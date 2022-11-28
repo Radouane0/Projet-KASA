@@ -2,12 +2,15 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 25px;
+    position: absolute;
+    right: 10px;
+    top: 470px;
     &__name {
-        color: #FF6060;
+        color: $color-primary;
         margin-right: 10px;
     }
     &__img {
         border-radius: 30px;
-        width: 15%;
+        width: 23%;
     }
 }

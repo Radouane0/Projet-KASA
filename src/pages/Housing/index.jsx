@@ -22,8 +22,10 @@ function Housing() {
             <Tags tags={House.tags} />
             <Ratings ratings={House.rating} />
             <Host name={House.host.name} picture={House.host.picture} />
-            <Collapse category="Description" content={House.description} />
-            <Collapse category="Equipements" content={House.equipments} />
+            <div className="collapse-logement">
+                <Collapse category="Description" content={House.description} />
+                <Collapse category="Equipements" content={House.equipments} />
+            </div>
         </div>
     )
 }
