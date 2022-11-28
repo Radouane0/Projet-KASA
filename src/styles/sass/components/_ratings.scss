@@ -1,11 +1,8 @@
 .ratings{
-    margin-left: 25px;
-    margin-top: 10px;
     &__star {
-        width: 5%;
         margin-right: 5px;
+        height: 20px;
         @media screen and (min-width: map-get($breakpoint, desktop)) {
-            width: 2%;
         }
     }
 }

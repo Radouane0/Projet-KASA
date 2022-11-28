@@ -16,14 +16,24 @@ function Carousel({ pictures }) {
     }
     return (
         <div className="carousel">
-            <img src={picture} alt="Intérieur maison"></img>
+            <img
+                className="carousel__picture"
+                src={picture}
+                alt="Intérieur maison"
+            ></img>
             {totalPictures === 1 ? null : (
-                <button onClick={Before} className="carousel__left">
+                <button
+                    onClick={Before}
+                    className="carousel__button carousel__button--left"
+                >
                     <img src={LeftArrow} alt="Flèche de gauche"></img>
                 </button>
             )}
             {totalPictures === 1 ? null : (
-                <button onClick={After} className="carousel__right">
+                <button
+                    onClick={After}
+                    className="carousel__button carousel__button--right"
+                >
                     <img src={RightArrow} alt="Flèche de droite"></img>
                 </button>
             )}

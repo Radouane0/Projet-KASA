@@ -20,18 +20,20 @@ function About() {
                     alt="montagnes"
                 ></img>
             </div>
-            <ul>
-                {AboutDatas.map((text, index) => (
-                    <li key={index}>
-                        {
-                            <Collapse
-                                category={text.category}
-                                content={text.content}
-                            />
-                        }
-                    </li>
-                ))}
-            </ul>
+            <div className="collapse-about">
+                <ul>
+                    {AboutDatas.map((text, index) => (
+                        <li key={index}>
+                            {
+                                <Collapse
+                                    category={text.category}
+                                    content={text.content}
+                                />
+                            }
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 }
