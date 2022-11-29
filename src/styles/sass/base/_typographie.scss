@@ -13,19 +13,18 @@ body {
 .banner p {
     color: white;
     position: absolute;
-    left: 12%;
-    right: 31%;
     font-size: 22px;
     line-height: 24px;
+    width: 196px;
+    padding-left: 30px;
     @media screen and (min-width: map-get($breakpoint, tablette)) {
         font-size: 30px;
-        left: 170px;
-        right: 0;
+        width: 100%; 
+        text-align: center;
+        padding-left: unset;
     }
     @media screen and (min-width: map-get($breakpoint, desktop)) {
-        left: 230px;
         font-size: 34px;
-        right: 0;
     }
 }
 

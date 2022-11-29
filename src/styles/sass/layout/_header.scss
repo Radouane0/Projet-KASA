@@ -16,6 +16,11 @@
     &__nav-items {
         font-size: 14px;
         font-weight: bold;
+        a {
+            &.active, &:hover {
+                text-decoration: underline;
+            }
+        }
         @media screen and (min-width: map-get($breakpoint, tablette)) {
             font-size: 15px;
         }
