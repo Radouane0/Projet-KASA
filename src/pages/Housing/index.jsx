@@ -25,8 +25,18 @@ function Housing() {
                 <Host name={House.host.name} picture={House.host.picture} />
             </div>
             <div className="collapse-logement">
-                <Collapse category="Description" content={House.description} />
-                <Collapse category="Equipements" content={House.equipments} />
+                <div className="collapse-logement__button">
+                    <Collapse
+                        category="Description"
+                        content={House.description}
+                    />
+                </div>
+                <div className="collapse-logement__button">
+                    <Collapse
+                        category="Equipements"
+                        content={House.equipments}
+                    />
+                </div>
             </div>
         </div>
     )

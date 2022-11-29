@@ -21,9 +21,9 @@
     &__img {
         width: 5%;
         @media screen and (min-width: map-get($breakpoint, tablette)) {
-            width: 3%;
+            width: 4%;
             margin-right: 5px;
-        }    
+        }   
     }
     &__content {
         background-color: #F6F6F6;
@@ -46,5 +46,21 @@
     margin-left: 25px;
     margin-top: 45px;
     margin-right: 25px;
+    &__button {
+        @media screen and (min-width: map-get($breakpoint, tablette)) {
+            width: 40%;
+        }
+        @media screen and (min-width: map-get($breakpoint, desktop)) {
+            width: 40%;
+        }
+    }
+    @media screen and (min-width: map-get($breakpoint, tablette)) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 

@@ -35,10 +35,10 @@
     }
     &__list {
         background: $color-primary;
-        width: 88%;
         border-radius: 20px 20px 20px 20px;
         margin-top: 30px;
         height: 254px;
+        margin-right: 25px;
         @media screen and (min-width: map-get($breakpoint, tablette)) {
             width: 40%;
         }
